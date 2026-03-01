@@ -1,0 +1,38 @@
+.hero-section {
+    background-color: #ddd;
+    background-image: url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+.hero-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero-content h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.hero-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero-btn:hover {
+    background-color: #3e8e41;
+    /* Darker green */
+}
