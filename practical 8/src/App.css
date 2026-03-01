@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #dbeafca6; /* Soft blue background */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.header-title {
+  color: #21416e; /* Dark blue color */
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 550px; /* Restrict max width of the cards */
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content {
+  display: flex;
+  padding: 25px 30px;
+  gap: 25px;
+  align-items: center;
+}
+
+.profile-image {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.user-name {
+  color: #1e3a6a; /* Dark blue matching header */
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 12px; /* Space after the divider */
+}
+
+/* We don't need a separate divider div since we put border-bottom on user-name */
+.divider {
+  display: none;
+}
+
+.user-info {
+  margin: 4px 0;
+  color: #5a6679; /* Soft dark gray */
+  font-size: 0.95rem;
+}
+
+.card-action {
+  background-color: #fbfbfc; /* Very light gray/white */
+  border-top: 1px solid #f0f0f0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.view-profile-btn {
+  background-color: #2b70d4; /* Vivid blue */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.view-profile-btn:hover {
+  background-color: #1e5ab0;
+}
